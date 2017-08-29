@@ -31,6 +31,11 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 /**
+ * Define the globals
+ */
+define( 'KLT_CANNABIS_MENU_DIR', plugin_dir_path( __FILE__ ) );
+
+/**
  * The code that runs during plugin activation.
  * This action is documented in includes/class-klt-cannabis-menu-activator.php
  */

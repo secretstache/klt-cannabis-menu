@@ -171,6 +171,11 @@ class Klt_Cannabis_Menu {
 		$this->loader->add_action( 'init', $plugin_admin, 'insert_default_concentrate_type_terms' );
 		$this->loader->add_action( 'init', $plugin_admin, 'register_topical_type_tax' );
 		$this->loader->add_action( 'init', $plugin_admin, 'insert_default_topical_type_terms' );
+		$this->loader->add_filter( 'admin_body_class', $plugin_admin, 'klt_admin_body_classes' );
+
+		if ( class_exists('acf') ) {
+			$this->loader->add_filter( 'acf/settings/load_json', $plugin_admin, 'klt_acf_load_point', 10, 1 );
+		}
 
 	}
 

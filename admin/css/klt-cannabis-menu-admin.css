@@ -2,3 +2,23 @@
  * All of the CSS for your admin-specific functionality should be
  * included in this file.
  */
+
+ .acf-field.hide-label .acf-label {
+ 	margin: 0;
+ }
+
+ .acf-field.hide-label .acf-label label,
+ body.acf #tagsdiv-klt_cannabis_strain,
+ body.acf #tagsdiv-klt_cannabis_taste,
+ body.acf #tagsdiv-klt_cannabis_feeling,
+ body.acf #tagsdiv-klt_cannabis_scent,
+ body.acf #tagsdiv-klt_edible_type,
+ body.acf #tagsdiv-klt_concentrate_type,
+ body.acf #tagsdiv-klt_topical_type {
+ 	display: none;
+ }
+
+  .acf-field.horz ul.acf-checkbox-list li {
+  	display: inline;
+  	margin-right: 20px;
+  }

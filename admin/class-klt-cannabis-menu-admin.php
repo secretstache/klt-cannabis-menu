@@ -1021,5 +1021,42 @@ class Klt_Cannabis_Menu_Admin {
 
 	}
 
+	
+	/**
+	 * Creates a new load point for ACF Pro
+	 *
+	 * @since 	1.0.0
+	 * @access 	public
+	 */
+	public static function klt_acf_load_point( $paths ) { 
+	    
+	    $paths[] = KLT_CANNABIS_MENU_DIR . 'acf-local';
+
+	    return $paths;
+	    
+	}
+
+
+	/**
+	 * Admin body classes
+	 *
+	 * @since 	1.0.0
+	 * @access 	public
+	 */
+	function klt_admin_body_classes( $classes ) {
+		
+		$screen = get_current_screen();
+		
+		if ( class_exists('acf') ) {
+
+			if ( 'post' == $screen->base ) {
+				$classes .= 'acf';
+			}
+
+		}
+		
+		return $classes;
+	}
+
 
 }
