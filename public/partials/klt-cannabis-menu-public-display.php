@@ -6,7 +6,7 @@
  * This file is used to markup the public-facing aspects of the plugin.
  *
  * @link       kultivate.tech
- * @since      1.0.0
+ * @since      0.1.0
  *
  * @package    Klt_Cannabis_Menu
  * @subpackage Klt_Cannabis_Menu/public/partials

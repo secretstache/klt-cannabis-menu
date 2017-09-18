@@ -7,7 +7,7 @@
  * public-facing side of the site and the admin area.
  *
  * @link       kultivate.tech
- * @since      1.0.0
+ * @since      0.1.0
  *
  * @package    Klt_Cannabis_Menu
  * @subpackage Klt_Cannabis_Menu/includes
@@ -22,7 +22,7 @@
  * Also maintains the unique identifier of this plugin as well as the current
  * version of the plugin.
  *
- * @since      1.0.0
+ * @since      0.1.0
  * @package    Klt_Cannabis_Menu
  * @subpackage Klt_Cannabis_Menu/includes
  * @author     Rich Staats <rich@secretstache.com>
@@ -33,7 +33,7 @@ class Klt_Cannabis_Menu {
 	 * The loader that's responsible for maintaining and registering all hooks that power
 	 * the plugin.
 	 *
-	 * @since    1.0.0
+	 * @since    0.1.0
 	 * @access   protected
 	 * @var      Klt_Cannabis_Menu_Loader    $loader    Maintains and registers all hooks for the plugin.
 	 */
@@ -42,7 +42,7 @@ class Klt_Cannabis_Menu {
 	/**
 	 * The unique identifier of this plugin.
 	 *
-	 * @since    1.0.0
+	 * @since    0.1.0
 	 * @access   protected
 	 * @var      string    $plugin_name    The string used to uniquely identify this plugin.
 	 */
@@ -51,7 +51,7 @@ class Klt_Cannabis_Menu {
 	/**
 	 * The current version of the plugin.
 	 *
-	 * @since    1.0.0
+	 * @since    0.1.0
 	 * @access   protected
 	 * @var      string    $version    The current version of the plugin.
 	 */
@@ -64,12 +64,12 @@ class Klt_Cannabis_Menu {
 	 * Load the dependencies, define the locale, and set the hooks for the admin area and
 	 * the public-facing side of the site.
 	 *
-	 * @since    1.0.0
+	 * @since    0.1.0
 	 */
 	public function __construct() {
 
 		$this->plugin_name = 'klt-cannabis-menu';
-		$this->version = '1.0.0';
+		$this->version = '0.1.0';
 
 		$this->load_dependencies();
 		$this->set_locale();
@@ -91,7 +91,7 @@ class Klt_Cannabis_Menu {
 	 * Create an instance of the loader which will be used to register the hooks
 	 * with WordPress.
 	 *
-	 * @since    1.0.0
+	 * @since    0.1.0
 	 * @access   private
 	 */
 	private function load_dependencies() {
@@ -129,7 +129,7 @@ class Klt_Cannabis_Menu {
 	 * Uses the Klt_Cannabis_Menu_i18n class in order to set the domain and to register the hook
 	 * with WordPress.
 	 *
-	 * @since    1.0.0
+	 * @since    0.1.0
 	 * @access   private
 	 */
 	private function set_locale() {
@@ -144,7 +144,7 @@ class Klt_Cannabis_Menu {
 	 * Register all of the hooks related to the admin area functionality
 	 * of the plugin.
 	 *
-	 * @since    1.0.0
+	 * @since    0.1.0
 	 * @access   private
 	 */
 	private function define_admin_hooks() {
@@ -183,7 +183,7 @@ class Klt_Cannabis_Menu {
 	 * Register all of the hooks related to the public-facing functionality
 	 * of the plugin.
 	 *
-	 * @since    1.0.0
+	 * @since    0.1.0
 	 * @access   private
 	 */
 	private function define_public_hooks() {
@@ -198,7 +198,7 @@ class Klt_Cannabis_Menu {
 	/**
 	 * Run the loader to execute all of the hooks with WordPress.
 	 *
-	 * @since    1.0.0
+	 * @since    0.1.0
 	 */
 	public function run() {
 		$this->loader->run();
@@ -208,7 +208,7 @@ class Klt_Cannabis_Menu {
 	 * The name of the plugin used to uniquely identify it within the context of
 	 * WordPress and to define internationalization functionality.
 	 *
-	 * @since     1.0.0
+	 * @since     0.1.0
 	 * @return    string    The name of the plugin.
 	 */
 	public function get_plugin_name() {
@@ -218,7 +218,7 @@ class Klt_Cannabis_Menu {
 	/**
 	 * The reference to the class that orchestrates the hooks with the plugin.
 	 *
-	 * @since     1.0.0
+	 * @since     0.1.0
 	 * @return    Klt_Cannabis_Menu_Loader    Orchestrates the hooks of the plugin.
 	 */
 	public function get_loader() {
@@ -228,7 +228,7 @@ class Klt_Cannabis_Menu {
 	/**
 	 * Retrieve the version number of the plugin.
 	 *
-	 * @since     1.0.0
+	 * @since     0.1.0
 	 * @return    string    The version number of the plugin.
 	 */
 	public function get_version() {

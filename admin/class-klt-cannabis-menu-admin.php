@@ -4,7 +4,7 @@
  * The admin-specific functionality of the plugin.
  *
  * @link       kultivate.tech
- * @since      1.0.0
+ * @since      0.1.0
  *
  * @package    Klt_Cannabis_Menu
  * @subpackage Klt_Cannabis_Menu/admin
@@ -25,7 +25,7 @@ class Klt_Cannabis_Menu_Admin {
 	/**
 	 * The ID of this plugin.
 	 *
-	 * @since    1.0.0
+	 * @since    0.1.0
 	 * @access   private
 	 * @var      string    $plugin_name    The ID of this plugin.
 	 */
@@ -34,7 +34,7 @@ class Klt_Cannabis_Menu_Admin {
 	/**
 	 * The version of this plugin.
 	 *
-	 * @since    1.0.0
+	 * @since    0.1.0
 	 * @access   private
 	 * @var      string    $version    The current version of this plugin.
 	 */
@@ -43,7 +43,7 @@ class Klt_Cannabis_Menu_Admin {
 	/**
 	 * Initialize the class and set its properties.
 	 *
-	 * @since    1.0.0
+	 * @since    0.1.0
 	 * @param      string    $plugin_name       The name of this plugin.
 	 * @param      string    $version    The version of this plugin.
 	 */
@@ -57,7 +57,7 @@ class Klt_Cannabis_Menu_Admin {
 	/**
 	 * Register the stylesheets for the admin area.
 	 *
-	 * @since    1.0.0
+	 * @since    0.1.0
 	 */
 	public function enqueue_styles() {
 
@@ -80,7 +80,7 @@ class Klt_Cannabis_Menu_Admin {
 	/**
 	 * Register the JavaScript for the admin area.
 	 *
-	 * @since    1.0.0
+	 * @since    0.1.0
 	 */
 	public function enqueue_scripts() {
 
@@ -103,7 +103,7 @@ class Klt_Cannabis_Menu_Admin {
 	/**
 	 * Creates the "Cannabis Menu" menu
 	 *
-	 * @since 	1.0.0
+	 * @since 	0.1.0
 	 * @access 	public
 	 * @uses 	register_post_type()
 	 */
@@ -115,7 +115,7 @@ class Klt_Cannabis_Menu_Admin {
 			'manage_options', // capability
 			'cannabis-menu.php', // menu_slug
 			'', // function
-			'dashicons-layout', // icon
+			'data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM5Y2ExYTg7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5UdW1ibGV3ZWVkLUdyYXktTWVudS1JY29uLWZvci1XUC1DTVM8L3RpdGxlPjxnIGlkPSJidWxsZXRlZC1saXN0Ij48Y2lyY2xlIGNsYXNzPSJjbHMtMSIgY3g9IjAuOSIgY3k9IjEuNzciIHI9IjAuOSIvPjxjaXJjbGUgY2xhc3M9ImNscy0xIiBjeD0iMC45IiBjeT0iNS45NSIgcj0iMC45Ii8+PGNpcmNsZSBjbGFzcz0iY2xzLTEiIGN4PSIwLjkiIGN5PSIxMC4xNCIgcj0iMC45Ii8+PGNpcmNsZSBjbGFzcz0iY2xzLTEiIGN4PSIwLjkiIGN5PSIxNC4yMyIgcj0iMC45Ii8+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSI0LjUxIiB5PSIxLjQ3IiB3aWR0aD0iMTEuNDgiIGhlaWdodD0iMC42Ii8+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSI0LjUxIiB5PSI1LjY1IiB3aWR0aD0iMTEuNDkiIGhlaWdodD0iMC42Ii8+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSI0LjUxIiB5PSI5Ljg0IiB3aWR0aD0iMTEuNDgiIGhlaWdodD0iMC42Ii8+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSI0LjUxIiB5PSIxMy45MyIgd2lkdGg9IjExLjQ5IiBoZWlnaHQ9IjAuNiIvPjwvZz48L3N2Zz4=', // icon
 			5 // position
 		);
 	}
@@ -123,7 +123,7 @@ class Klt_Cannabis_Menu_Admin {
 	/**
 	 * Creates the klt_flower post type
 	 *
-	 * @since 	1.0.0
+	 * @since 	0.1.0
 	 * @access 	public
 	 * @uses 	register_post_type()
 	 */
@@ -144,7 +144,7 @@ class Klt_Cannabis_Menu_Admin {
 		$opts['map_meta_cap']							= TRUE;
 		$opts['menu_icon']								= 'dashicons-products';
 		$opts['menu_position']							= 25;
-		$opts['public']									= FALSE;
+		$opts['public']									= TRUE;
 		$opts['publicly_querable']						= TRUE;
 		$opts['query_var']								= TRUE;
 		$opts['register_meta_box_cb']					= '';
@@ -201,7 +201,7 @@ class Klt_Cannabis_Menu_Admin {
 	/**
 	 * Creates the klt_edible post type
 	 *
-	 * @since 	1.0.0
+	 * @since 	0.1.0
 	 * @access 	public
 	 * @uses 	register_post_type()
 	 */
@@ -222,7 +222,7 @@ class Klt_Cannabis_Menu_Admin {
 		$opts['map_meta_cap']							= TRUE;
 		$opts['menu_icon']								= 'dashicons-products';
 		$opts['menu_position']							= 25;
-		$opts['public']									= FALSE;
+		$opts['public']									= TRUE;
 		$opts['publicly_querable']						= TRUE;
 		$opts['query_var']								= TRUE;
 		$opts['register_meta_box_cb']					= '';
@@ -279,7 +279,7 @@ class Klt_Cannabis_Menu_Admin {
 	/**
 	 * Creates the klt_concentrate post type
 	 *
-	 * @since 	1.0.0
+	 * @since 	0.1.0
 	 * @access 	public
 	 * @uses 	register_post_type()
 	 */
@@ -300,7 +300,7 @@ class Klt_Cannabis_Menu_Admin {
 		$opts['map_meta_cap']							= TRUE;
 		$opts['menu_icon']								= 'dashicons-products';
 		$opts['menu_position']							= 25;
-		$opts['public']									= FALSE;
+		$opts['public']									= TRUE;
 		$opts['publicly_querable']						= TRUE;
 		$opts['query_var']								= TRUE;
 		$opts['register_meta_box_cb']					= '';
@@ -357,7 +357,7 @@ class Klt_Cannabis_Menu_Admin {
 	/**
 	 * Creates the klt_topical post type
 	 *
-	 * @since 	1.0.0
+	 * @since 	0.1.0
 	 * @access 	public
 	 * @uses 	register_post_type()
 	 */
@@ -378,7 +378,7 @@ class Klt_Cannabis_Menu_Admin {
 		$opts['map_meta_cap']							= TRUE;
 		$opts['menu_icon']								= 'dashicons-products';
 		$opts['menu_position']							= 25;
-		$opts['public']									= FALSE;
+		$opts['public']									= TRUE;
 		$opts['publicly_querable']						= TRUE;
 		$opts['query_var']								= TRUE;
 		$opts['register_meta_box_cb']					= '';
@@ -435,7 +435,7 @@ class Klt_Cannabis_Menu_Admin {
 	/**
 	 * Creates the klt_seed post type
 	 *
-	 * @since 	1.0.0
+	 * @since 	0.1.0
 	 * @access 	public
 	 * @uses 	register_post_type()
 	 */
@@ -456,7 +456,7 @@ class Klt_Cannabis_Menu_Admin {
 		$opts['map_meta_cap']							= TRUE;
 		$opts['menu_icon']								= 'dashicons-products';
 		$opts['menu_position']							= 25;
-		$opts['public']									= FALSE;
+		$opts['public']									= TRUE;
 		$opts['publicly_querable']						= TRUE;
 		$opts['query_var']								= TRUE;
 		$opts['register_meta_box_cb']					= '';
@@ -513,7 +513,7 @@ class Klt_Cannabis_Menu_Admin {
 	/**
 	 * Creates the klt_cannabis_strain taxonomy for all cannabis menu items
 	 *
-	 * @since 	1.0.0
+	 * @since 	0.1.0
 	 * @access 	public
 	 * @uses 	register_taxonomy()
 	 */
@@ -573,7 +573,7 @@ class Klt_Cannabis_Menu_Admin {
 	/**
 	 * Creates the defined set of choices (terms) for klt_cannabis_strain
 	 *
-	 * @since 	1.0.0
+	 * @since 	0.1.0
 	 * @access 	public
 	 * @uses 	wp_insert_term()
 	 */
@@ -593,7 +593,7 @@ class Klt_Cannabis_Menu_Admin {
 	/**
 	 * Removed the ability for user generated terms for klt_cannabis_strain
 	 *
-	 * @since 	1.0.0
+	 * @since 	0.1.0
 	 * @access 	public
 	 * @uses 	pre_insert_term()
 	 */
@@ -608,7 +608,7 @@ class Klt_Cannabis_Menu_Admin {
 	/**
 	 * Creates the klt_cannabis_taste taxonomy for select cannabis menu items
 	 *
-	 * @since 	1.0.0
+	 * @since 	0.1.0
 	 * @access 	public
 	 * @uses 	register_taxonomy()
 	 */
@@ -667,7 +667,7 @@ class Klt_Cannabis_Menu_Admin {
 	/**
 	 * Creates the klt_cannabis_scent taxonomy for select cannabis menu items
 	 *
-	 * @since 	1.0.0
+	 * @since 	0.1.0
 	 * @access 	public
 	 * @uses 	register_taxonomy()
 	 */
@@ -726,7 +726,7 @@ class Klt_Cannabis_Menu_Admin {
 	/**
 	 * Creates the klt_cannabis_feeling taxonomy for select cannabis menu items
 	 *
-	 * @since 	1.0.0
+	 * @since 	0.1.0
 	 * @access 	public
 	 * @uses 	register_taxonomy()
 	 */
@@ -785,7 +785,7 @@ class Klt_Cannabis_Menu_Admin {
 	/**
 	 * Creates the klt_edible_type taxonomy for select cannabis menu items
 	 *
-	 * @since 	1.0.0
+	 * @since 	0.1.0
 	 * @access 	public
 	 * @uses 	register_taxonomy()
 	 */
@@ -845,7 +845,7 @@ class Klt_Cannabis_Menu_Admin {
 	/**
 	 * Creates the default set of choices (terms) for klt_edible_type
 	 *
-	 * @since 	1.0.0
+	 * @since 	0.1.0
 	 * @access 	public
 	 * @uses 	wp_insert_term()
 	 */
@@ -865,7 +865,7 @@ class Klt_Cannabis_Menu_Admin {
 	/**
 	 * Creates the klt_concentrate_type taxonomy for select cannabis menu items
 	 *
-	 * @since 	1.0.0
+	 * @since 	0.1.0
 	 * @access 	public
 	 * @uses 	register_taxonomy()
 	 */
@@ -925,7 +925,7 @@ class Klt_Cannabis_Menu_Admin {
 	/**
 	 * Creates the default set of choices (terms) for klt_concentrate_type
 	 *
-	 * @since 	1.0.0
+	 * @since 	0.1.0
 	 * @access 	public
 	 * @uses 	wp_insert_term()
 	 */
@@ -945,7 +945,7 @@ class Klt_Cannabis_Menu_Admin {
 	/**
 	 * Creates the klt_topical_type taxonomy for select cannabis menu items
 	 *
-	 * @since 	1.0.0
+	 * @since 	0.1.0
 	 * @access 	public
 	 * @uses 	register_taxonomy()
 	 */
@@ -1005,7 +1005,7 @@ class Klt_Cannabis_Menu_Admin {
 	/**
 	 * Creates the default set of choices (terms) for klt_topical_type
 	 *
-	 * @since 	1.0.0
+	 * @since 	0.1.0
 	 * @access 	public
 	 * @uses 	wp_insert_term()
 	 */
@@ -1025,7 +1025,7 @@ class Klt_Cannabis_Menu_Admin {
 	/**
 	 * Creates a new load point for ACF Pro
 	 *
-	 * @since 	1.0.0
+	 * @since 	0.1.0
 	 * @access 	public
 	 */
 	public static function klt_acf_load_point( $paths ) { 
@@ -1040,7 +1040,7 @@ class Klt_Cannabis_Menu_Admin {
 	/**
 	 * Admin body classes
 	 *
-	 * @since 	1.0.0
+	 * @since 	0.1.0
 	 * @access 	public
 	 */
 	function klt_admin_body_classes( $classes ) {

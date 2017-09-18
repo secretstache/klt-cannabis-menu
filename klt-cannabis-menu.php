@@ -9,14 +9,14 @@
  * that starts the plugin.
  *
  * @link              kultivate.tech
- * @since             1.0.0
+ * @since             0.1.0
  * @package           Klt_Cannabis_Menu
  *
  * @wordpress-plugin
  * Plugin Name:       Kultivate Cannabis Menu
  * Plugin URI:        kultivate.tech
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
- * Version:           1.0.0
+ * Description:       Cannabis Menus for the Kultivate.tech network.
+ * Version:           0.1.0
  * Author:            Rich Staats
  * Author URI:        kultivate.tech
  * License:           GPL-2.0+
@@ -63,18 +63,31 @@ register_deactivation_hook( __FILE__, 'deactivate_klt_cannabis_menu' );
 require plugin_dir_path( __FILE__ ) . 'includes/class-klt-cannabis-menu.php';
 
 /**
+ * The code that connects with kernl to set up UI plugin updates.
+ */
+require plugin_dir_path( __FILE__ ) . 'includes/plugin_update_check.php';
+
+/**
  * Begins execution of the plugin.
  *
  * Since everything within the plugin is registered via hooks,
  * then kicking off the plugin from this point in the file does
  * not affect the page life cycle.
  *
- * @since    1.0.0
+ * @since    0.1.0
  */
 function run_klt_cannabis_menu() {
 
 	$plugin = new Klt_Cannabis_Menu();
 	$plugin->run();
 
+	$pluginUpdateChecker = new PluginUpdateChecker_2_0 (
+		'https://kernl.us/api/v1/updates/59bff87c9e7ec8707b8e5e02/',
+		__FILE__,
+		'klt-cannabis-menu',
+		1
+	);
+
 }
+
 run_klt_cannabis_menu();
