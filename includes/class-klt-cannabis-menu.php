@@ -69,7 +69,7 @@ class Klt_Cannabis_Menu {
 	public function __construct() {
 
 		$this->plugin_name = 'klt-cannabis-menu';
-		$this->version = '0.1.0';
+		$this->version = '0.1.1';
 
 		$this->load_dependencies();
 		$this->set_locale();
