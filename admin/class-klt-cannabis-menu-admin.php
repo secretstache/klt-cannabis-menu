@@ -851,7 +851,7 @@ class Klt_Cannabis_Menu_Admin {
 	 */
 	public static function insert_default_edible_type_terms() {
 
-		$default_terms = array('Cookie', 'Brownie', 'Honey', 'Tea', 'Tonic', 'Coffee', 'Soda');
+		$default_terms = array('Cookie', 'Brownie', 'Candy', 'Honey', 'Tea', 'Tonic', 'Coffee', 'Soda');
 
 		$taxonomy = 'klt_edible_type';
 
