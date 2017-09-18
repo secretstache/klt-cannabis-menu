@@ -15,7 +15,7 @@
                 "class": "horz",
                 "id": ""
             },
-            "taxonomy": "klt_concentrate_type",
+            "taxonomy": "klt_topical_type",
             "field_type": "radio",
             "allow_null": 0,
             "add_term": 1,
@@ -187,5 +187,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1503966543
+    "modified": 1505755641
 }
