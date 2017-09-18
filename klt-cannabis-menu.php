@@ -16,7 +16,7 @@
  * Plugin Name:       Kultivate Cannabis Menu
  * Plugin URI:        kultivate.tech
  * Description:       Cannabis Menus for the Kultivate.tech network.
- * Version:           0.1.0
+ * Version:           0.1.1
  * Author:            Rich Staats
  * Author URI:        kultivate.tech
  * License:           GPL-2.0+
