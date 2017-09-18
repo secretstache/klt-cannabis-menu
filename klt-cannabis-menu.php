@@ -67,6 +67,13 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-klt-cannabis-menu.php';
  */
 require plugin_dir_path( __FILE__ ) . 'includes/plugin_update_check.php';
 
+$pluginUpdateChecker = new PluginUpdateChecker_2_0 (
+	'https://kernl.us/api/v1/updates/59bff87c9e7ec8707b8e5e02/',
+	__FILE__,
+	'klt-cannabis-menu',
+	1
+);
+
 /**
  * Begins execution of the plugin.
  *
@@ -80,13 +87,6 @@ function run_klt_cannabis_menu() {
 
 	$plugin = new Klt_Cannabis_Menu();
 	$plugin->run();
-
-	$pluginUpdateChecker = new PluginUpdateChecker_2_0 (
-		'https://kernl.us/api/v1/updates/59bff87c9e7ec8707b8e5e02/',
-		__FILE__,
-		'klt-cannabis-menu',
-		1
-	);
 
 }
 
