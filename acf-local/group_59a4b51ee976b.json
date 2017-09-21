@@ -25,6 +25,25 @@
             "multiple": 0
         },
         {
+            "key": "field_59c3f7c7692b3",
+            "label": "Brand",
+            "name": "brand",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_59a4b51eede2d",
             "label": "Strain",
             "name": "strain",
@@ -187,5 +206,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1505755641
+    "modified": 1506015181
 }
