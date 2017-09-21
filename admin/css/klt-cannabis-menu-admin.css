@@ -7,7 +7,7 @@
  	margin: 0;
  }
 
- .acf-field.hide-label .acf-label label,
+ .acf-field.hide-label > .acf-label label,
  body.acf #tagsdiv-klt_cannabis_strain,
  body.acf #tagsdiv-klt_cannabis_taste,
  body.acf #tagsdiv-klt_cannabis_feeling,
