@@ -139,7 +139,7 @@ class Klt_Cannabis_Menu_Admin {
 		$opts['capability_type']						= $cap_type;
 		$opts['description']							= '';
 		$opts['exclude_from_search']					= FALSE;
-		$opts['has_archive']							= TRUE;
+		$opts['has_archive']							= 'flowers';
 		$opts['hierarchical']							= FALSE;
 		$opts['map_meta_cap']							= TRUE;
 		$opts['menu_icon']								= 'dashicons-products';
@@ -148,7 +148,6 @@ class Klt_Cannabis_Menu_Admin {
 		$opts['publicly_querable']						= TRUE;
 		$opts['query_var']								= TRUE;
 		$opts['register_meta_box_cb']					= '';
-		$opts['rewrite']								= FALSE;
 		$opts['show_in_admin_bar']						= TRUE;
 		$opts['show_in_menu']							= 'cannabis-menu.php';
 		$opts['show_in_nav_menu']						= TRUE;
@@ -188,7 +187,7 @@ class Klt_Cannabis_Menu_Admin {
 		$opts['rewrite']['ep_mask']						= EP_PERMALINK;
 		$opts['rewrite']['feeds']						= FALSE;
 		$opts['rewrite']['pages']						= TRUE;
-		$opts['rewrite']['slug']						= esc_html__( strtolower( $plural ), $text_domain );
+		$opts['rewrite']['slug']						= esc_html__( strtolower( $single ), $text_domain );
 		$opts['rewrite']['with_front']					= FALSE;
 
 		$opts = apply_filters( 'klt-flower-cpt-options', $opts );
@@ -217,7 +216,7 @@ class Klt_Cannabis_Menu_Admin {
 		$opts['capability_type']						= $cap_type;
 		$opts['description']							= '';
 		$opts['exclude_from_search']					= FALSE;
-		$opts['has_archive']							= TRUE;
+		$opts['has_archive']							= 'edibles';
 		$opts['hierarchical']							= FALSE;
 		$opts['map_meta_cap']							= TRUE;
 		$opts['menu_icon']								= 'dashicons-products';
@@ -226,7 +225,6 @@ class Klt_Cannabis_Menu_Admin {
 		$opts['publicly_querable']						= TRUE;
 		$opts['query_var']								= TRUE;
 		$opts['register_meta_box_cb']					= '';
-		$opts['rewrite']								= FALSE;
 		$opts['show_in_admin_bar']						= TRUE;
 		$opts['show_in_menu']							= 'cannabis-menu.php';
 		$opts['show_in_nav_menu']						= TRUE;
@@ -266,7 +264,7 @@ class Klt_Cannabis_Menu_Admin {
 		$opts['rewrite']['ep_mask']						= EP_PERMALINK;
 		$opts['rewrite']['feeds']						= FALSE;
 		$opts['rewrite']['pages']						= TRUE;
-		$opts['rewrite']['slug']						= esc_html__( strtolower( $plural ), $text_domain );
+		$opts['rewrite']['slug']						= esc_html__( strtolower( $single ), $text_domain );
 		$opts['rewrite']['with_front']					= FALSE;
 
 		$opts = apply_filters( 'klt-edible-cpt-options', $opts );
@@ -295,7 +293,7 @@ class Klt_Cannabis_Menu_Admin {
 		$opts['capability_type']						= $cap_type;
 		$opts['description']							= '';
 		$opts['exclude_from_search']					= FALSE;
-		$opts['has_archive']							= TRUE;
+		$opts['has_archive']							= 'concentrates';
 		$opts['hierarchical']							= FALSE;
 		$opts['map_meta_cap']							= TRUE;
 		$opts['menu_icon']								= 'dashicons-products';
@@ -304,7 +302,6 @@ class Klt_Cannabis_Menu_Admin {
 		$opts['publicly_querable']						= TRUE;
 		$opts['query_var']								= TRUE;
 		$opts['register_meta_box_cb']					= '';
-		$opts['rewrite']								= FALSE;
 		$opts['show_in_admin_bar']						= TRUE;
 		$opts['show_in_menu']							= 'cannabis-menu.php';
 		$opts['show_in_nav_menu']						= TRUE;
@@ -344,7 +341,7 @@ class Klt_Cannabis_Menu_Admin {
 		$opts['rewrite']['ep_mask']						= EP_PERMALINK;
 		$opts['rewrite']['feeds']						= FALSE;
 		$opts['rewrite']['pages']						= TRUE;
-		$opts['rewrite']['slug']						= esc_html__( strtolower( $plural ), $text_domain );
+		$opts['rewrite']['slug']						= esc_html__( strtolower( $single ), $text_domain );
 		$opts['rewrite']['with_front']					= FALSE;
 
 		$opts = apply_filters( 'klt-concentrate-cpt-options', $opts );
@@ -373,7 +370,7 @@ class Klt_Cannabis_Menu_Admin {
 		$opts['capability_type']						= $cap_type;
 		$opts['description']							= '';
 		$opts['exclude_from_search']					= FALSE;
-		$opts['has_archive']							= TRUE;
+		$opts['has_archive']							= 'topicals';
 		$opts['hierarchical']							= FALSE;
 		$opts['map_meta_cap']							= TRUE;
 		$opts['menu_icon']								= 'dashicons-products';
@@ -382,7 +379,6 @@ class Klt_Cannabis_Menu_Admin {
 		$opts['publicly_querable']						= TRUE;
 		$opts['query_var']								= TRUE;
 		$opts['register_meta_box_cb']					= '';
-		$opts['rewrite']								= FALSE;
 		$opts['show_in_admin_bar']						= TRUE;
 		$opts['show_in_menu']							= 'cannabis-menu.php';
 		$opts['show_in_nav_menu']						= TRUE;
@@ -422,7 +418,7 @@ class Klt_Cannabis_Menu_Admin {
 		$opts['rewrite']['ep_mask']						= EP_PERMALINK;
 		$opts['rewrite']['feeds']						= FALSE;
 		$opts['rewrite']['pages']						= TRUE;
-		$opts['rewrite']['slug']						= esc_html__( strtolower( $plural ), $text_domain );
+		$opts['rewrite']['slug']						= esc_html__( strtolower( $single ), $text_domain );
 		$opts['rewrite']['with_front']					= FALSE;
 
 		$opts = apply_filters( 'klt-topical-cpt-options', $opts );
@@ -451,7 +447,7 @@ class Klt_Cannabis_Menu_Admin {
 		$opts['capability_type']						= $cap_type;
 		$opts['description']							= '';
 		$opts['exclude_from_search']					= FALSE;
-		$opts['has_archive']							= TRUE;
+		$opts['has_archive']							= 'seeds';
 		$opts['hierarchical']							= FALSE;
 		$opts['map_meta_cap']							= TRUE;
 		$opts['menu_icon']								= 'dashicons-products';
@@ -460,7 +456,6 @@ class Klt_Cannabis_Menu_Admin {
 		$opts['publicly_querable']						= TRUE;
 		$opts['query_var']								= TRUE;
 		$opts['register_meta_box_cb']					= '';
-		$opts['rewrite']								= FALSE;
 		$opts['show_in_admin_bar']						= TRUE;
 		$opts['show_in_menu']							= 'cannabis-menu.php';
 		$opts['show_in_nav_menu']						= TRUE;
@@ -500,7 +495,7 @@ class Klt_Cannabis_Menu_Admin {
 		$opts['rewrite']['ep_mask']						= EP_PERMALINK;
 		$opts['rewrite']['feeds']						= FALSE;
 		$opts['rewrite']['pages']						= TRUE;
-		$opts['rewrite']['slug']						= esc_html__( strtolower( $plural ), $text_domain );
+		$opts['rewrite']['slug']						= esc_html__( strtolower( $single ), $text_domain );
 		$opts['rewrite']['with_front']					= FALSE;
 
 		$opts = apply_filters( 'klt-seed-cpt-options', $opts );
