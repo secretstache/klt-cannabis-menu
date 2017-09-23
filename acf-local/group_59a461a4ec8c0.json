@@ -25,89 +25,6 @@
             "multiple": 0
         },
         {
-            "key": "field_59a4634ba54b4",
-            "label": "Potency",
-            "name": "potency",
-            "type": "group",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "layout": "block",
-            "sub_fields": [
-                {
-                    "key": "field_59a46361a54b5",
-                    "label": "THC",
-                    "name": "thc",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "33",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "%",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_59a4637ca54b6",
-                    "label": "CBD",
-                    "name": "cbd",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "34",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "%",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_59a465f0fa592",
-                    "label": "Label",
-                    "name": "label",
-                    "type": "select",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "33",
-                        "class": "",
-                        "id": ""
-                    },
-                    "choices": {
-                        "Mild": "Mild",
-                        "Strong": "Strong",
-                        "Very Strong": "Very Strong"
-                    },
-                    "default_value": [
-                        "Mild"
-                    ],
-                    "allow_null": 0,
-                    "multiple": 0,
-                    "ui": 0,
-                    "ajax": 0,
-                    "return_format": "value",
-                    "placeholder": ""
-                }
-            ]
-        },
-        {
             "key": "field_59a4647103f14",
             "label": "Profile",
             "name": "profile",
@@ -123,7 +40,7 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_59a4647c03f15",
+                    "key": "field_59c6913251911",
                     "label": "Scent",
                     "name": "scent",
                     "type": "taxonomy",
@@ -141,11 +58,11 @@
                     "add_term": 1,
                     "save_terms": 1,
                     "load_terms": 1,
-                    "return_format": "id",
+                    "return_format": "object",
                     "multiple": 0
                 },
                 {
-                    "key": "field_59a464a203f16",
+                    "key": "field_59c6915a51912",
                     "label": "Taste",
                     "name": "taste",
                     "type": "taxonomy",
@@ -153,7 +70,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "34",
+                        "width": "33",
                         "class": "",
                         "id": ""
                     },
@@ -163,11 +80,11 @@
                     "add_term": 1,
                     "save_terms": 1,
                     "load_terms": 1,
-                    "return_format": "id",
+                    "return_format": "object",
                     "multiple": 0
                 },
                 {
-                    "key": "field_59a464c203f17",
+                    "key": "field_59c6918c51913",
                     "label": "Feeling",
                     "name": "feeling",
                     "type": "taxonomy",
@@ -185,8 +102,93 @@
                     "add_term": 1,
                     "save_terms": 1,
                     "load_terms": 1,
-                    "return_format": "id",
+                    "return_format": "object",
                     "multiple": 0
+                }
+            ]
+        },
+        {
+            "key": "field_59c69004f65b1",
+            "label": "Potency",
+            "name": "potency",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_59c69013f65b2",
+                    "label": "THC",
+                    "name": "thc",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": "",
+                    "max": "",
+                    "step": ""
+                },
+                {
+                    "key": "field_59c6902cf65b3",
+                    "label": "CBD",
+                    "name": "cbd",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": "",
+                    "max": "",
+                    "step": ""
+                },
+                {
+                    "key": "field_59c6903ff65b4",
+                    "label": "Strength",
+                    "name": "strength",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Mild": "Mild",
+                        "Strong": "Strong",
+                        "Very Strong": "Very Strong"
+                    },
+                    "default_value": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "return_format": "value",
+                    "placeholder": ""
                 }
             ]
         },
@@ -248,5 +250,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1503951204
+    "modified": 1506185712
 }
