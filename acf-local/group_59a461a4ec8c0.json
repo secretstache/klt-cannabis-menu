@@ -123,16 +123,16 @@
             "clone": [
                 "group_59c6968e82873"
             ],
-            "display": "seamless",
+            "display": "group",
             "layout": "block",
             "prefix_label": 0,
             "prefix_name": 0
         },
         {
-            "key": "field_59a46d14ab525",
+            "key": "field_59c6a254986d9",
             "label": "Availability",
             "name": "availability",
-            "type": "group",
+            "type": "clone",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -141,8 +141,13 @@
                 "class": "",
                 "id": ""
             },
+            "clone": [
+                "group_59c6a10b6c830"
+            ],
+            "display": "seamless",
             "layout": "block",
-            "sub_fields": []
+            "prefix_label": 0,
+            "prefix_name": 0
         }
     ],
     "location": [
@@ -162,5 +167,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1506188360
+    "modified": 1506189926
 }

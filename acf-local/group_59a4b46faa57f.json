@@ -81,16 +81,16 @@
             "clone": [
                 "group_59c6968e82873"
             ],
-            "display": "seamless",
+            "display": "group",
             "layout": "block",
             "prefix_label": 0,
             "prefix_name": 0
         },
         {
-            "key": "field_59a4b46faf98a",
+            "key": "field_59c6a191df2cf",
             "label": "Availability",
             "name": "availability",
-            "type": "group",
+            "type": "clone",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -99,32 +99,13 @@
                 "class": "",
                 "id": ""
             },
+            "clone": [
+                "group_59c6a10b6c830"
+            ],
+            "display": "seamless",
             "layout": "block",
-            "sub_fields": [
-                {
-                    "key": "field_59a46d49ab527",
-                    "label": "Locations",
-                    "name": "locations",
-                    "type": "relationship",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "post_type": [
-                        "location"
-                    ],
-                    "taxonomy": [],
-                    "filters": "",
-                    "elements": "",
-                    "min": "",
-                    "max": "",
-                    "return_format": "object"
-                }
-            ]
+            "prefix_label": 0,
+            "prefix_name": 0
         }
     ],
     "location": [
@@ -144,5 +125,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1506186986
+    "modified": 1506189811
 }
