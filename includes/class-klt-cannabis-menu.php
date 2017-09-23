@@ -159,9 +159,9 @@ class Klt_Cannabis_Menu {
 		$this->loader->add_action( 'init', $plugin_admin, 'register_concentrate_cpt' );
 		$this->loader->add_action( 'init', $plugin_admin, 'register_topical_cpt' );
 		$this->loader->add_action( 'init', $plugin_admin, 'register_seed_cpt' );
+		$this->loader->add_action( 'init', $plugin_admin, 'shared_cannabis_fields' );
 		$this->loader->add_action( 'init', $plugin_admin, 'register_cannabis_strain_tax' );
 		$this->loader->add_action( 'init', $plugin_admin, 'insert_defined_strain_terms' );
-		// $this->loader->add_action( 'pre_insert_term', $plugin_admin, 'prevent_new_strain_terms' );
 		$this->loader->add_action( 'init', $plugin_admin, 'register_cannabis_taste_tax' );
 		$this->loader->add_action( 'init', $plugin_admin, 'register_cannabis_scent_tax' );
 		$this->loader->add_action( 'init', $plugin_admin, 'register_cannabis_feeling_tax' );
@@ -173,9 +173,9 @@ class Klt_Cannabis_Menu {
 		$this->loader->add_action( 'init', $plugin_admin, 'insert_default_topical_type_terms' );
 		$this->loader->add_filter( 'admin_body_class', $plugin_admin, 'klt_admin_body_classes' );
 
-		if ( class_exists('acf') ) {
-			$this->loader->add_filter( 'acf/settings/load_json', $plugin_admin, 'klt_acf_load_point', 10, 1 );
-		}
+		// if ( class_exists('acf') ) {
+		// 	$this->loader->add_filter( 'acf/settings/load_json', $plugin_admin, 'klt_acf_load_point', 10, 1 );
+		// }
 
 	}
 

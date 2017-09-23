@@ -194,6 +194,11 @@ class Klt_Cannabis_Menu_Admin {
 
 		register_post_type( strtolower( $cpt_name ), $opts );
 
+		// Create ACF Fields
+		if ( class_exists('acf') ) {
+			require plugin_dir_path( __FILE__ ) . 'acf-flower-information.php';
+		}
+
 	}
 
 	
@@ -270,6 +275,11 @@ class Klt_Cannabis_Menu_Admin {
 		$opts = apply_filters( 'klt-edible-cpt-options', $opts );
 
 		register_post_type( strtolower( $cpt_name ), $opts );
+
+		// Create ACF Fields
+		if ( class_exists('acf') ) {
+			require plugin_dir_path( __FILE__ ) . 'acf-edible-information.php';
+		}
 
 	}
 
@@ -348,6 +358,11 @@ class Klt_Cannabis_Menu_Admin {
 
 		register_post_type( strtolower( $cpt_name ), $opts );
 
+		// Create ACF Fields
+		if ( class_exists('acf') ) {
+			require plugin_dir_path( __FILE__ ) . 'acf-concentrate-information.php';
+		}
+
 	}
 
 
@@ -425,6 +440,11 @@ class Klt_Cannabis_Menu_Admin {
 
 		register_post_type( strtolower( $cpt_name ), $opts );
 
+		// Create ACF Fields
+		if ( class_exists('acf') ) {
+			require plugin_dir_path( __FILE__ ) . 'acf-topical-information.php';
+		}
+
 	}
 
 
@@ -501,6 +521,11 @@ class Klt_Cannabis_Menu_Admin {
 		$opts = apply_filters( 'klt-seed-cpt-options', $opts );
 
 		register_post_type( strtolower( $cpt_name ), $opts );
+
+		// Create ACF Fields
+		if ( class_exists('acf') ) {
+			require plugin_dir_path( __FILE__ ) . 'acf-seed-information.php';
+		}
 
 	}
 
@@ -1023,11 +1048,24 @@ class Klt_Cannabis_Menu_Admin {
 	 * @since 	0.1.0
 	 * @access 	public
 	 */
-	public static function klt_acf_load_point( $paths ) { 
+	// public static function klt_acf_load_point( $paths ) { 
 	    
-	    $paths[] = KLT_CANNABIS_MENU_DIR . 'acf-local';
+	//     $paths[] = KLT_CANNABIS_MENU_DIR . 'acf-local';
 
-	    return $paths;
+	//     return $paths;
+	    
+	// }
+	
+
+	/**
+	 * Creates a new load point for ACF Pro
+	 *
+	 * @since 	0.1.0
+	 * @access 	public
+	 */
+	public static function shared_cannabis_fields() { 
+	    
+	    require plugin_dir_path( __FILE__ ) . 'acf-cannabis-shared-fields.php';
 	    
 	}
 
@@ -1038,7 +1076,7 @@ class Klt_Cannabis_Menu_Admin {
 	 * @since 	0.1.0
 	 * @access 	public
 	 */
-	function klt_admin_body_classes( $classes ) {
+	public static function klt_admin_body_classes( $classes ) {
 		
 		$screen = get_current_screen();
 		
