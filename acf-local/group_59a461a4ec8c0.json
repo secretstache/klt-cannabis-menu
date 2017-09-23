@@ -178,9 +178,9 @@
                         "id": ""
                     },
                     "choices": {
-                        "Mild": "Mild",
-                        "Strong": "Strong",
-                        "Very Strong": "Very Strong"
+                        "2": "Mild",
+                        "3": "Strong",
+                        "5": "Very Strong"
                     },
                     "default_value": [],
                     "allow_null": 0,
@@ -250,5 +250,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1506185712
+    "modified": 1506186573
 }
