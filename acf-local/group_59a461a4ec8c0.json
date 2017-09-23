@@ -38,80 +38,13 @@
                 "id": ""
             },
             "layout": "block",
-            "sub_fields": [
-                {
-                    "key": "field_59c6913251911",
-                    "label": "Scent",
-                    "name": "scent",
-                    "type": "taxonomy",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "33",
-                        "class": "",
-                        "id": ""
-                    },
-                    "taxonomy": "klt_cannabis_scent",
-                    "field_type": "select",
-                    "allow_null": 0,
-                    "add_term": 1,
-                    "save_terms": 1,
-                    "load_terms": 1,
-                    "return_format": "object",
-                    "multiple": 0
-                },
-                {
-                    "key": "field_59c6915a51912",
-                    "label": "Taste",
-                    "name": "taste",
-                    "type": "taxonomy",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "33",
-                        "class": "",
-                        "id": ""
-                    },
-                    "taxonomy": "klt_cannabis_taste",
-                    "field_type": "select",
-                    "allow_null": 0,
-                    "add_term": 1,
-                    "save_terms": 1,
-                    "load_terms": 1,
-                    "return_format": "object",
-                    "multiple": 0
-                },
-                {
-                    "key": "field_59c6918c51913",
-                    "label": "Feeling",
-                    "name": "feeling",
-                    "type": "taxonomy",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "33",
-                        "class": "",
-                        "id": ""
-                    },
-                    "taxonomy": "klt_cannabis_feeling",
-                    "field_type": "select",
-                    "allow_null": 0,
-                    "add_term": 1,
-                    "save_terms": 1,
-                    "load_terms": 1,
-                    "return_format": "object",
-                    "multiple": 0
-                }
-            ]
+            "sub_fields": []
         },
         {
             "key": "field_59c69004f65b1",
             "label": "Potency",
             "name": "potency",
-            "type": "group",
+            "type": "clone",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -120,77 +53,13 @@
                 "class": "",
                 "id": ""
             },
+            "clone": [
+                "group_59c6968e82873"
+            ],
+            "display": "seamless",
             "layout": "block",
-            "sub_fields": [
-                {
-                    "key": "field_59c69013f65b2",
-                    "label": "THC",
-                    "name": "thc",
-                    "type": "number",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "33",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "%",
-                    "min": "",
-                    "max": "",
-                    "step": ""
-                },
-                {
-                    "key": "field_59c6902cf65b3",
-                    "label": "CBD",
-                    "name": "cbd",
-                    "type": "number",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "33",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "%",
-                    "min": "",
-                    "max": "",
-                    "step": ""
-                },
-                {
-                    "key": "field_59c6903ff65b4",
-                    "label": "Strength",
-                    "name": "strength",
-                    "type": "select",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "33",
-                        "class": "",
-                        "id": ""
-                    },
-                    "choices": {
-                        "2": "Mild",
-                        "3": "Strong",
-                        "5": "Very Strong"
-                    },
-                    "default_value": [],
-                    "allow_null": 0,
-                    "multiple": 0,
-                    "ui": 0,
-                    "ajax": 0,
-                    "return_format": "value",
-                    "placeholder": ""
-                }
-            ]
+            "prefix_label": 0,
+            "prefix_name": 0
         },
         {
             "key": "field_59a46d14ab525",
@@ -206,31 +75,7 @@
                 "id": ""
             },
             "layout": "block",
-            "sub_fields": [
-                {
-                    "key": "field_59a46d49ab527",
-                    "label": "Locations",
-                    "name": "locations",
-                    "type": "relationship",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "post_type": [
-                        "location"
-                    ],
-                    "taxonomy": [],
-                    "filters": "",
-                    "elements": "",
-                    "min": "",
-                    "max": "",
-                    "return_format": "object"
-                }
-            ]
+            "sub_fields": []
         }
     ],
     "location": [
@@ -250,5 +95,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1506186573
+    "modified": 1506187047
 }

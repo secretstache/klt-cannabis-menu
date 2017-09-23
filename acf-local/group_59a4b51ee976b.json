@@ -69,7 +69,7 @@
             "key": "field_59a4b51eedea2",
             "label": "Potency",
             "name": "potency",
-            "type": "group",
+            "type": "clone",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -78,75 +78,13 @@
                 "class": "",
                 "id": ""
             },
+            "clone": [
+                "group_59c6968e82873"
+            ],
+            "display": "seamless",
             "layout": "block",
-            "sub_fields": [
-                {
-                    "key": "field_59a46361a54b5",
-                    "label": "THC",
-                    "name": "thc",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "33",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "%",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_59a4637ca54b6",
-                    "label": "CBD",
-                    "name": "cbd",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "34",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "%",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_59a465f0fa592",
-                    "label": "Label",
-                    "name": "label",
-                    "type": "select",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "33",
-                        "class": "",
-                        "id": ""
-                    },
-                    "choices": {
-                        "Mild": "Mild",
-                        "Strong": "Strong",
-                        "Very Strong": "Very Strong"
-                    },
-                    "default_value": [
-                        "Mild"
-                    ],
-                    "allow_null": 0,
-                    "multiple": 0,
-                    "ui": 0,
-                    "ajax": 0,
-                    "return_format": "value",
-                    "placeholder": ""
-                }
-            ]
+            "prefix_label": 0,
+            "prefix_name": 0
         },
         {
             "key": "field_59a4b51eedf44",
@@ -206,5 +144,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1506015181
+    "modified": 1506187140
 }
