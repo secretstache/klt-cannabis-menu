@@ -68,7 +68,7 @@ if( function_exists('acf_add_local_field_group') ):
 					5 => 'Very Strong',
 				),
 				'default_value' => array (
-					0 => 2,
+					0 => '',
 				),
 				'allow_null' => 1,
 				'multiple' => 0,
