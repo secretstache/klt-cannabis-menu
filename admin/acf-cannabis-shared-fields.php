@@ -70,7 +70,7 @@ if( function_exists('acf_add_local_field_group') ):
 				'default_value' => array (
 					0 => 2,
 				),
-				'allow_null' => 0,
+				'allow_null' => 1,
 				'multiple' => 0,
 				'ui' => 0,
 				'ajax' => 0,
